@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="glaven">
+<h1>Bitcoin #3</h1>
+<p>
+    Once the math problem has been solved the  rest of the validation network can easily   double-check the work, since the contents of  the block can be fed into the proposed solution  
+    and it either spits out the valid answer or fails. If the equation works and the consensus  of validators signs off on it the block  
+    is added to the bottom of the ledger and  the miner who solved the problem first   is rewarded with newly generated Bitcoin.
+    The complexity of the answer that the computers  are trying to solve scales up based on the   network’s processing power specifically to  incur heavy diminishing returns as a protection  
+    against an attack on the network where someone  just builds a bigger computer and takes over.
+    Critics pointed out that  this created new problems:   adversarial validation would deliberately incur  escalating processing costs, which would in turn  
+    generate perverse structural incentives  that would quickly reward capital holders   and lock out any individual that wasn’t already  obscenely wealthy, because while the escalating  
+    proof-of-work scheme incurs heavy diminishing  returns, diminishing returns are still returns,  
+    so more would always go to those with  the resources to build the bigger rig. No matter what Bitcoin future was envisioned,  
+    in the here and now computer  hardware can be bought with dollars. Rather than dismantling corrupt power structures,  
+    this would just become a new  tool for existing wealth. And that’s… exactly what happened.
+    Thus began an arms race for bigger and bigger  processing rigs, followed by escalating demands  
+    for the support systems, hardware engineers, HVAC,  and operating space needed to put those rigs in.
+    And, don’t worry, we’re not  forgetting the power requirements. These rigs draw an industrial amount of  power and, because of the winner-takes-all  
+    nature of the competition, huge amounts of  redundant work are being done and discarded.
+    Estimates for this power consumption are  hard to verify, the data is very complex,   spread across hundreds of operators  around the globe, who move frequently  
+    in search of cheap electricity, and  it’s all pretty heavily politicized.
+    But even conservative estimates from within the  crypto-mining industry puts the sum energy cost  
+    of Bitcoin processing on par with the power  consumption of a small industrialized nation.
+    Now, evangelists will counter that the global  banking industry also uses a lot of power,  
+    gesturing at things like idle ATMs humming away  all night long, which is strictly speaking,  
+    not untrue. On a factual level the  entire global banking industry does,  
+    in fact, use a lot of total electricity. But, for scale, it takes six hours of that  sustained power draw for the Bitcoin network  
+    to process as many transactions  as VISA handles in one minute,   and during that time VISA is using fractions  of a cent of electricity per transaction.
+    And that’s just VISA. That’s  one major institution. So, like, yes, globally the entirety of the  banking industry consumes a lot of power,  
+    and a non-trivial portion of that is  waste that could be better allocated.   But it’s also the global banking  industry for seven billion people,  
+    and not the hobby horse of a few  hundred thousand gambling addicts. So just to head all this off at the pass,  Bitcoin and proof-of-work cryptocurrency aren’t  
+    incentivizing a move to green energy sources,  like solar and wind, they are offsetting it.
+    Because electrical consumption, electrical  waste, is the value that underpins Bitcoin.  
+    Miners spend X dollars in electricity to  mine a Bitcoin, they expect to be able to   sell that coin for at least X plus profit.  When new power sources come online and the  
+    price of electricity goes down, they don’t  let X go down, they build a bigger machine.
+</p>
+</div>
+<table class="table table-borderless">
+    <tbody>
+          <tr>
+            <th scope="row"></th>
+            <td><a href='{% url 'SecondBitcoin' %}' class="btn btn-secondary btn-lg active" role="button" aria-pressed="true"><=BITCOIN #2</a></td>
+            <td><a href='{% url 'bitcoinQuiz' %}' class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">TEST MY KNOWLEDGE</a></td>
+            <td><a href='{% url 'etherium' %}' class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">ETHERIUM #1=></a></td>
+          </tr>
+    </tbody>
+</table>
+{% endblock %}

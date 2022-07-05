@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        {% include 'navbar.html' %}
+        <style>
+            #glaven{
+                margin-top: 200px;
+                margin-left: 200px;
+                margin-right: 200px;
+            }
+            .temi{
+                font-size: x-large;
+                
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="{% static 'first/style.css'%}"/>
+    </head>
+    <body>
+        <div id="glaven">
+            <table class="table table-striped table-dark">
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td class="temi"><b> Why cryptocurrency started </b></td>
+                    <td><a href='{% url 'crypto' %}' class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">TEACH ME</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td class="temi"><b> The blockchain </b></td>
+                    <td><a href='{% url 'blockchain' %}' class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">TEACH ME</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td class="temi"><b> Bitcoin </b></td>
+                    <td><a href='{% url 'bitcoin' %}' class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">TEACH ME</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td class="temi"><b> Etherium </b></td>
+                    <td><a href='{% url 'etherium' %}' class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">TEACH ME</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td class="temi"><b> What are NFTs? </b></td>
+                    <td><a href='{% url 'what' %}' class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">TEACH ME</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td class="temi"><b> What is the correlation between NFTs and crypto? </b></td>
+                    <td><a href='{% url 'correlation' %}' class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">TEACH ME</a></td>
+                  </tr>
+                  <th scope="row">7</th>
+                  <td class="temi"><b> Is it wise to invest in NFTs? </b></td>
+                  <td><a href='{% url 'wise' %}' class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">TEACH ME</a></td>
+                </tr>
+                </tbody>
+              </table>
+          </div>
+    </body>
+</html>

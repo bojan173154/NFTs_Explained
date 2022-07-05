@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="glaven">
+<h1>What is the correlation between NFTs and crypto? #2</h1>
+<p>
+    In a huge number of cases the answer  wasn’t very clear, and even the sellers,   caught in the promise of a payday, weren’t  altogether sure what they had even sold.
+    Tons of the tokens did little more than point to  images stored on normal servers readily accessible   via HTTP, meaning the bought assets would be  just as vulnerable to link rot as anything else.
+    Some pointed to images stored on peer-to-peer IPFS  servers, which are more resistant to link rot as,  
+    similar to a torrent, it only requires that  someone keep the file active somewhere,  
+    rather than requiring the original server to  stay up, but as millions of dead torrents prove:  
+    that’s still a far cry from the “eternal”  storage solution that evangelists were claiming. The images were stored and delivered the  same way as any other image on the internet,  
+    easily saved or duplicated simply  by virtue of the fact that in order   for your computer to display an  image it needs to download it.
+    Claims of digital scarcity apply only to the  token itself, not the thing the token signified.
+    More than that, there was no cryptographic  relationship between the images and the tokens. The image associated with a token  could be easily altered or replaced  
+    if the person with access to the server that  the image was hosted on just changed file names,  
+    making the relationship between the two tenuous  and flimsy in a way that undermined the claims  
+    that this was somehow a more durable,  reliable way of transacting digital art.
+    There was also no root proof of authenticity, no   confirmation that the person minting the  artwork was the person who created the artwork.
+    This is a pretty handy encapsulation of the  way that blockchain fails to solve the most   common problems with fraud, which tend to start  with bad data going into a system at the input,  
+    not data being altered mid-stream. Artists who complained about  this system which clearly  
+    incentivized impersonating popular  artists, including deceased artists,   were told that it was their fault for  not jumping in sooner, that if they had  
+    bought in and minted their stuff first then  it would be easy to prove the forgeries.
+    Because evangelists don’t see this as  a tool, as a market that may or may   not fit into an artist’s business, they see it as  
+    the future, so failure to participate isn’t  a business decision, it’s just a mistake.
+    They’re terrible people. All told the frenzy collapsed pretty quickly. By June the market had  already receded by about 90%,  
+    which, incidentally, just further incentivized  the low-effort process of minting other peoples’   artwork, to the point that art platform Deviant  Art implemented an extremely well received feature  
+    that scans several popular NFT  marketplaces for matching images. The output of that is extremely depressing.
+    Not to labour this point, but reposting  digital art without attribution is nothing new. Profiting off someone else's  art is also nothing new.
+    All that’s new is NFTs represent  a high-energy marketplace with an   irrational pricing culture where the mean buyer is  easily flattered and not particularly discerning.
+    The potential payoff is extremely high, much,  much higher than a bootleg Redbubble store,   the consequences border nonexistent, and  the market is clearly in an untenable state,  
+    so there’s an incentive to get in at as  low a cost as possible before it collapses,   hence the absolute plague of art theft.
+    Even the argument that artists  could make passive revenue off   secondary sales turned out to  have a lot of caveats attached.
+    One, the smart contract for the token needs  to have a function that defines royalties,   so anyone who minted a token based  off of hype making it sound like an  
+    inherent function of the system was out of luck. And, two, the token doesn’t know what a sale  is and can’t differentiate between being sold  
+    and being transferred, so it’s actually  the marketplace that informs the token  
+    “you’re being sold” and collects the royalties. End result, royalties are easily bypassed  simply by using a marketplace that doesn’t  
+    collect royalties or uses a different  format of royalty collection that’s   incompatible with the function the token uses.
+   
+</p>
+</div>
+<table class="table table-borderless">
+    <tbody>
+            <th scope="row"></th>
+            <td><a href='{% url 'correlation' %}' class="btn btn-secondary btn-lg active" role="button" aria-pressed="true"><=NFTS AND CRYPTO CORRELATION #1</a></td>
+            <td></td>
+            <td><a href='{% url 'ThirdCorrelation' %}' class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">NFTS AND CRYPTO CORRELATION #3=></a></td>
+          </tr>
+    </tbody>
+</table>
+{% endblock %}

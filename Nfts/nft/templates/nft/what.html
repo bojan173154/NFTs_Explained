@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="glaven">
+<h1>What are NFTs?</h1>
+<p>
+  NFT stands for non fungible token.
+  So, fungible,
+let's talk about the word fungible.
+It's this very specific word
+that economists use,
+it has a very precise definition.
+I wanna use a different word for fungible for a second.
+Let's just use the word replaceable.
+Non-fungible means non-replaceable,
+you can't replace it, there's only one of them, it's unique.
+Non fungible.
+Let's say you want to buy an orange jacket.
+You go on the internet, and a jacket costs $39.
+If you purchase one of these jackets for $39,
+you don't care what specific jacket they send to you,
+they're gonna make thousands of jackets in your size,
+send them to stores, send them to people,
+and they will send one to you,
+you don't care which one it is.
+The jacket is fungible, it's replaceable.
+As long as you get one that's identical to the rest,
+it's worth the same to you, they're interchangeable.
+However let's talk about one orange jacket that has been
+with you for a long time. You just love it, you love the color,
+you have an attachment to this jacket. This jacket is not replaceable.
+If I went onto the website and paid $39
+for an orange jacket
+that was this exact same model,
+it would not be this jacket.
+This jacket is non-fungible.
+It is the only one on the planet that exists.
+It has emotional value.
+It has significance.
+It is a very valuable thing because it is scarce.
+There is only one of them,
+it's valuable to you at least.
+Everything in our economy is one or the other,
+fungible or non-fungible.
+A sack or rice is fungible,
+you just want a sack of rice,
+you don't care which one it is.
+The Mona Lisa, non-fungible, there's only one.
+Unsurprisingly, non-fungible things
+are way more valuable than fungible things.
+</p>
+</div>
+<table class="table table-borderless">
+    <tbody>
+          <tr>
+            <th scope="row"></th>
+            <td><a href='{% url 'SecondEtherium' %}' class="btn btn-secondary btn-lg active" role="button" aria-pressed="true"><=ETHERIUM #2</a></td>
+            <td><a href='{% url 'NftsQuiz' %}' class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">TEST MY KNOWLEDGE</a></td>
+            <td><a href='{% url 'correlation' %}' class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">NFTS AND CRYPTO CORRELATION #1=></a></td>
+          </tr>
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="glaven">
+<h1>The Blockchain</h1>
+<p>
+  The blockchain fulfills the same thing the bank was doing,
+  but instead of doing this privately on my bank account
+  and talking to Anna's bank,
+  all of the transactions are actually recorded
+  publicly on the internet.
+  Anna charges me six crypto coins
+  for my three slices of pizza.
+  I go to swipe my proverbial bank card
+  to say yes, I want to pay you six coins.
+  Instead of the bank seeing that request for a transaction
+  and trying to validate it,
+  it goes on to this public record
+  where a bunch of people's computers
+  all around the world are keeping track
+  of every single transaction of everyone always.
+  If I don't indeed have the six coins in my account
+  to pay Anna,
+  all of the people's computers
+  who are keeping track of every single transaction
+  will notice that there's a discrepancy.
+  They'll be like whoa whoa whoa dude,
+  you don't have six coins.
+  We're looking at every transaction ever
+  and you don't have six coins.
+  Your transaction is rejected.
+  If I do have six coins,
+  all of the computers looking at the public record
+  will see that request for a transaction
+  and they'll be like yep, approved.
+  You have six coins and now Anna has six coins.
+  And they'll write that transaction into the public record.
+  Now Anna having those six extra coins
+  is now the business of everybody,
+  everybody now knows that.
+  The point here is that the group verifies
+  the legitimacy of every transaction
+  by keeping an eye on every transaction
+  to make sure that it adds up.
+  Okay, so you're wondering
+  what does the blockchain and this public record
+  have anything to do with cat gifs
+  that sell for $600,000?
+  Well I'm about to tell you.
+  Let's say one day you're just looking at the ledger
+  and the ledger's like
+  Johnny wants to give Anna six coins.
+  Okay he's got six coins, approved.
+  And then a transaction comes up
+  that's like a Malaysian businessman
+  wants to give three million dollars
+  worth of coins to Jack Dorsey
+  in exchange for a little token,
+  or digital certificate that says
+  that the tweet is now somehow owned
+  by the Malaysian businessman.
+  The only thing that the blockchain cares about
+  is does the Malaysian businessman
+  have three million dollars worth of coins?
+  And so a bunch of computers all around the world
+  look at the whole entire list of transactions
+  and say like yeah, this guy has more
+  than three million dollars worth of coins, approved.
+  They approve the transaction,
+  and now it is written in a public record
+  that is unalterable
+  that says that this Malaysian businessman owns this tweet.
+  The token has been transferred to somebody new,
+  non-fungible token, NFT.
+  And if there's anything that gets human psychology
+  to value something,
+  it's if an entire group validates that it's real
+  and that there's only one of them.
+  There are tens of thousands of NFTs of all kinds.
+  Some music is being given tokens,
+  lots of art is being minted as tokens
+  and being bought and sold.</p>
+</div>
+<table class="table table-borderless">
+    <tbody>
+          <tr>
+            <th scope="row"></th>
+            <td><a href='{% url 'SecondCrypto' %}' class="btn btn-secondary btn-lg active" role="button" aria-pressed="true"><=WHY CRYPTOCURRENCY STARTED #2</a></td>
+            <td><a href='{% url 'blockchainQuiz' %}' class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">TEST MY KNOWLEDGE</a></td>
+            <td><a href='{% url 'bitcoin' %}' class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">BITCOIN #1=></a></td>
+          </tr>
+    </tbody>
+</table>
+{% endblock %}

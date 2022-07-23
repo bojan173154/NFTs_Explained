@@ -4,7 +4,7 @@
   .greet{
     font-size: 18px;
     color: #fff;
-    margin-right: 20px;
+    padding-right: 2%;
   }
 </style>
  
@@ -36,7 +36,7 @@
   {% if request.user.is_authenticated %}
   <span ><a  class="greet" href='{% url 'logout' %}'>Logout</a></span>
   {% else %}
-  <span ><a  class="greet" href='{% url 'login' %}'>Login</a></span>
+  <span ><a  class="greet" href='{% url 'login' %}'>Login</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
   <span ><a  class="greet" href='{% url 'register' %}'>Register</a></span>
   {% endif %}
 </nav>
